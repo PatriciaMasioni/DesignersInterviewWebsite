@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Designers Interview</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main>
+    <section class="infos-1">
+      <h2>Timer</h2>
+    </section>
+    <section class="interviews">
+      <section class="infos-2">
+        <h3>What's in a graphic design's student</h3>
+        <p>Here's some thoughts of design's students <br>
+          rambling about any other things than life.
+        </p>
+      </section>
+      <section class="tracks">
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track active">
+          <p>Sabrina</p>
+          <audio src="RSC/Sabrina 7.53.mp3">Non supporté</audio>
+        </div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track active">
+          <p>Léa</p>
+          <audio src="RSC/Lea D 15.39.mp3">Non supporté</audio>
+        </div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track active">
+          <p>Audrey</p>
+          <audio src="RSC/Audrey 12.17.mp3">Non supporté</audio>
+        </div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track active">
+          <p>Camille</p>
+          <audio src="RSC/Camille C 6.28.mp3">Non supporté</audio>
+        </div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track active">
+          <p>Elise</p>
+          <audio src="RSC/Elise 7.03.mp3">Non supporté</audio>
+        </div>
+        <div class="track"></div>
+        <div class="track"></div>
+        <div class="track active">
+          <p>Adèle</p>
+          <audio src="RSC/Adele 10.10.mp3">Non supporté</audio>
+        </div>
+        <div class="track"></div>
+      </section>
+    </section>
+    <section class="infos-3">
+      <h1>mind ?</h1>
+    </section>
+  </main>
+  <script type="text/javascript">
+    const main = document.querySelector("main");
+    main.style.height = window.innerHeight + "px";
+
+    const tracks = document.querySelectorAll(".track.active");
+
+    function playAudio() {
+      this.lastElementChild.play();
+    }
+
+    function stopAudio() {
+      this.lastElementChild.pause();
+    }
+
+    tracks.forEach((t) => t.addEventListener("mouseover", playAudio));
+    tracks.forEach((t) => t.addEventListener("mouseleave", stopAudio));
+  </script>
+</body>
+</html>

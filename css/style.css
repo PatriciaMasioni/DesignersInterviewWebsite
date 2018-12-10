@@ -1,0 +1,109 @@
+/************************************************************
+Author: Patricia Masioni
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0.0
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+
+:root {
+  --brand-color: #e24d4d;
+  --secondary-color: #807f7f;
+  --color-white: white;
+  --color-black: black;
+}
+
+@font-face {
+  font-family: "Arima Madurai";
+  src: url("../RSC/font/ArimaMadurai-Regular.otf");
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Arima Madurai", serif;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+/************************************************
+1.	HEADINGS
+************************************************/
+
+h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+/************************************************
+2.	LAYOUT
+************************************************/
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infos-1 {
+  transform: rotate(-90deg);
+}
+
+.infos-3 {
+  transform: rotate(90deg);
+}
+
+.infos-2 {
+  text-align: right;
+  /* width: 100%; */
+  margin: 4rem 0;
+}
+
+/************************************************
+3.	INTERVIEWS
+************************************************/
+
+.tracks {
+  display: flex;
+  align-items: flex-end;
+}
+
+.track {
+  width: .25rem;
+  height: 5rem;
+  background: var(--secondary-color);
+  margin: 0 .4rem;
+}
+
+.track p {
+  color: var(--color-white);
+  position: absolute;
+  bottom: 5rem;
+}
+
+.active {
+  background: var(--brand-color);
+  height: 6rem;
+}
+
+.active:hover {
+  transform: scale(2);
+}
