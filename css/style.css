@@ -30,6 +30,7 @@ body {
   font-family: "Arima Madurai", serif;
   background: var(--color-black);
   color: var(--color-white);
+  overflow: hidden;
 }
 
 /************************************************
@@ -37,8 +38,8 @@ body {
 ************************************************/
 
 h1 {
-  font-size: 8rem;
-  margin: 0;
+  font-size: 5rem;
+  /* margin-left: 1rem; */
 }
 
 h2 {
@@ -69,6 +70,7 @@ main {
 
 .infos-3 {
   transform: rotate(90deg);
+
 }
 
 .infos-2 {
